@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Password Validator</title>
+</head>
+<body>
+  <div class="container">
+    <h2>PASSWORD VALIDATOR</h2>
+    <div class="name-input">
+      <input type="text" name="nameText" id="nameText" placeholder="Enter your name" />
+    </div>
+    <div class="email-input">
+      <input type="email" name="emailText" id="emailText" placeholder="Enter your email" />
+    </div>
+    <div class="password-body">
+      <div class="password-input">
+        <input type="password" name="validatorText" id="validatorText" placeholder="Enter your password" />
+        <img id="togglePassword" src="images/eye-close.png" alt="Show/Hide Password" />
+      </div>
+      <div class="password-check-container">
+        <div class="password-check-toggle">
+          <button id="togglePasswordCheck">close</button>
+        </div>
+        <div class="password-check" id="passwordCheck">
+          <div class="check-length">
+            <img src="images/close.png" /> At least 8 Character Long
+          </div>
+          <div class="check-uppercase">
+            <img src="images/close.png" /> At least 1 uppercase letter (A-Z)
+          </div>
+          <div class="check-lowercase">
+            <img src="images/close.png" /> At least 1 Lowercase letter (a-z)
+          </div>
+          <div class="check-number">
+            <img src="images/close.png" /> At least 1 Number (0-9)
+          </div>
+          <div class="check-special">
+            <img src="images/close.png" /> At least 1 special character
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="captcha-input">
+      <input type="text" name="captchaText" id="captchaText" placeholder="Enter CAPTCHA" />
+      <!-- Placeholder for CAPTCHA image or CAPTCHA generation script -->
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

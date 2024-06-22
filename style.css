@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background: #78c1f3;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background: white;
+  padding: 25px;
+  width: 450px;
+  border-radius: 10px;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.password-input,
+.name-input,
+.email-input,
+.captcha-input {
+  display: flex;
+  align-items: center;
+  background: #78c1f3;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.password-input input,
+.name-input input,
+.email-input input,
+.captcha-input input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 15px 0;
+  font-size: 18px;
+  color: white;
+}
+
+.password-input img,
+.name-input img,
+.email-input img,
+.captcha-input img {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+  height: 20px;
+}
+
+.password-check img {
+  height: 25px;
+  padding-right: 10px;
+}
+
+.password-check div {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  font-weight: 500;
+  color: red;
+}
+
+
+#togglePasswordCheck{
+  text-align: center;
+  background: transparent;
+  border: none;
+  color: red;
+
+}
+
+.password-check-toggle{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+
+}
